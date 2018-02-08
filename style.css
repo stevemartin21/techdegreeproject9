@@ -1,0 +1,757 @@
+*{
+	margin:0px;
+	padding:0px;
+/*box-sizing: border-box;  */
+}
+
+/* Grid Layout */
+
+#top{
+	width:100%;
+	/*height:150px;  */
+	background-color: #6B5B95;
+}
+
+#top li{
+	display:block;
+	text-decoration: none;
+	list-style-type: none;
+	text-align:center;
+	color:white;
+	padding:5px;	
+}
+
+#your {
+	font-weight: bold;
+	color:white;
+}
+
+#app {
+	font-weight: 100;
+}
+
+#bell{
+	
+	border-right: solid blue 1px;
+	margin:5px auto;
+	padding-bottom: 10px;
+}
+
+#avatar{
+	
+	height: 40px;
+	width:40px;	
+	margin: 10px auto;
+}
+
+#avatar img{
+	width:100%;
+	height:100%;
+	border-radius: 50%;
+}
+
+#avatar:hover{
+	transform: rotate(270deg);
+}
+
+#logo:hover{
+	transform: scale(1.5);
+}
+
+#name:hover{
+	transform: skew(30deg);
+}
+
+	
+/* The sidebar menu */
+.sidenav {
+    /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */
+    /* position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   /* z-index: ; /* Stay on top */
+   /* Stay at the top */
+  	float: left;
+    background-color: #111; /* Black */
+    /*overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    display: block;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    height:60px;
+    width:60px;
+    margin:20px auto;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+    transform: translateX(20px);
+}
+
+.active {
+	border-left: 1px solid green;
+}
+
+/* Style page content */
+
+/*  Main Container Holds Everything */
+#main {
+width:100%;
+padding: 0px 10px;
+height: auto;
+
+float: right;
+
+}
+
+#dashboard{
+	height:100px;
+	width:100%;
+	margin-top:0px;
+}
+#title{
+	width:100%;
+	float:left;
+}
+
+#title h3{
+	padding:20px;
+	text-align: center;
+
+}
+
+#grayContainer{
+	background-color: lightgray;
+	width:100%;
+	float:left;
+	height:80%;
+
+}
+
+#search{
+	padding:10px;
+}
+
+#search input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    box-sizing: border-box;
+    float:right;
+    border-radius: 10px;
+    background: url('icons/search.png') no-repeat right;
+    background-color: white;
+}
+
+#bell{
+	color:white;
+	height:20px;
+	width:20px;
+}
+
+#bell:hover{
+	transform: translate(20px);
+}
+
+#alert{
+	box-sizing: border-box;
+	text-align: center;
+	height:140px;
+	width:100%;
+	margin:20px auto;
+	clear:both;
+	background-color: purple;
+	color:white;
+	padding:10px;
+	border-radius: 5px;
+	font-weight: 200;
+}
+
+#close {
+	cursor: pointer;
+}
+
+#warning{
+	display:block;
+	padding-right: 10px;
+	font-weight: bold;
+	margin:10px;
+}
+
+#close{
+	margin:5px auto;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	padding:10px;
+}
+
+#traffic{
+	width:90%;
+	margin:20px auto;
+}
+
+#traffic h3{
+	text-align: center;
+	padding:10px;
+	
+}
+
+#traffic ul{
+	margin:5px auto;
+}
+
+
+#traffic ul li{
+	text-decoration: none;
+	list-style-type: none;
+	display: inline-block;
+	padding:2px;
+	margin:2px;
+
+}
+
+.highlighted {
+	background-color: green;
+	border-radius: 25%;
+	color:white;
+}
+
+
+.container{
+	box-sizing: border-box;
+	clear:both;
+	width:90%;
+	margin:10px auto;
+	height:200px;
+}
+
+#newCharts{
+	height: 0px;
+	width:100%;
+	clear:both;
+}
+
+
+
+.container2{
+	box-sizing: border-box;
+	margin:20px auto;
+
+	/*clear: both; */
+	width:90%;
+	margin:10px auto;
+	height:auto;
+}
+
+.container2 h3{
+	text-align:center;
+}
+
+#social{
+	width:100%;
+	height:auto;
+	clear:both;
+}
+
+.socialItem{
+	width:100%;
+	margin:10px;
+	float:left;
+	
+	border:solid black 1px;
+	background-color:lightgray;
+}
+
+.content{
+	float:left;
+	width: 60%;
+	text-align: left;
+}
+
+.title{
+	color: purple;
+	font-size:1em;
+}
+
+.number{
+	font-size:2.5em;
+}
+
+.svg{
+	margin:10px;
+	background-color:purple;
+	color:white;
+	border-radius: 10px;
+	height:50px;
+	width:50px;
+	float:left;
+}
+.svg img{
+	width:100%;
+	height: auto;
+	}
+
+svg {
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  margin: 10px auto;
+  fill: white;
+}
+
+svg:hover{
+	transform: translate(30px);
+}
+
+.content{
+	float:right;
+	margin:10px;
+}
+.socialUpdate{
+	width:100%;
+	clear:both;
+}
+
+.container3{
+	width:100%;
+	margin:10px;	
+}
+
+.container3 h4{
+	clear:both;
+	text-align: center;
+}
+
+.container h3{
+	padding:10px;
+	text-align: center;
+}
+
+#interaction{
+	width:100%;
+	clear:both;
+}
+
+.container2 h4{
+	padding:10px;
+}
+
+.profile img{
+	height:50px;
+	width:50px;
+	border-radius: 50%;
+}
+
+.profile{
+	clear:both;
+	float:left;
+	padding:5px;
+}
+
+.contactInfo{
+	float:left;
+	padding:10px;
+}
+
+.date{
+	float:right;
+	padding:10px;
+}
+
+/* recent activity */
+
+.recent{
+	padding:10px;
+	float:left;
+}
+
+.arrow{
+	padding:10px;
+	float:right;
+	font-size: 1.5em;
+}
+
+.arrow:hover{
+	transform: rotate(180deg);
+}
+
+.container2 form{
+	margin:10px auto;
+	text-align:center;
+}
+
+input[type='text']{
+	width:80%;
+	padding:10px;
+	border: solid black 1px;
+	margin: 10px auto;
+	background-color:lightgray;
+	border-radius: 5px;
+}
+
+input[type='text']#message{
+	width:80%;
+	height:100px;
+	padding:10px;
+	border: solid black 1px;
+	margin: 10px auto;
+	background-color:lightgray;
+	
+	border-radius: 5px;
+}
+
+#send{
+	width:80%;
+	background-color:purple;
+	border:solid black 1px;
+	border-radius: 10px;
+	color:white;
+	margin: 10px auto;
+	padding:10px;
+	font-weight: bold;
+}
+
+#send:hover{
+	opacity: .75;
+	transform: scale(1.1);
+
+}
+
+#errorMessage{
+	display:none;
+}
+
+#errorMessage2{
+	display:none;
+}
+
+#confirm{
+	display:none;
+}
+
+.notification {
+	width:100%;
+	height:60px;
+}
+
+.notification h4{
+	text-align: center;
+	float:left;
+	padding:10px;
+	width: 60%;
+}
+
+select{
+	display: block;
+	width:100%;
+	margin: 10px auto;
+	padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.buttons{
+	width:100%;
+	text-align:center;
+	margin:10px auto;
+}
+
+#save{
+	background-color: purple;
+	padding:10px;
+	border-radius:10px;
+	color:white;
+	width:40%;
+	margin:10px;
+}
+
+#cancel {
+
+	background-color: lightgray;
+	padding:10px;
+	border-radius:10px;
+	width:40%;
+	margin:10px;
+}
+/* Turnon switch for notifications Toggle to turn on or off */
+
+/* The switch - the box around the slider */
+.turnOn {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.turnOn input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+ 
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px green;
+}
+
+input:checked + .slider:before {
+  
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 40px;
+}
+
+.slider.round:before {
+  border-radius: 45%;
+}
+
+#on {
+	display:none;
+	padding:5px;
+}
+
+#on2{
+	display:none;
+	padding:5px;
+}
+
+#off{
+	padding:5px;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+@media only screen and (max-width: 450px){
+	.date{
+		float:left;
+}
+
+}
+
+@media only screen and (min-width: 480px){
+	#newCharts{
+	
+	height: 50px;
+	width:100%;
+	clear:both;
+}
+
+.date{
+		float:right;
+}
+
+}
+
+@media only screen and (min-width: 680px){
+	#newCharts{
+	
+	height: 100px;
+	width:100%;
+	clear:both;
+}
+
+}
+@media only screen and (min-width: 760px) and (max-width:900px){
+
+#newCharts{
+	
+	height: 0px;
+	width:100%;
+	clear:both;
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	#top li{
+	display:inline;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 20px 10px;
+	margin: 10px 10px;
+	color:white;	
+}
+
+#top{
+	height:100px;
+}
+
+#logo{
+	float:left;
+	   
+}
+
+#bell, #avatar, #name{
+	float:right;
+}
+
+.sidenav{
+	width:15%;
+	height: 1800px; 
+}
+
+#main{
+	width:80%;
+}
+
+#title{
+	width:20%;
+}
+
+#grayContainer{
+	width:80%;
+}
+
+#title h3{
+	padding-top: 40px;
+}
+
+#alert{
+	height:auto;
+	width:90%;
+	padding:20px;
+}
+
+#warning{
+	display: inline;
+}
+
+#close{
+	display:inline;
+}
+
+
+#traffic ul{
+	float:right;
+}
+
+#traffic h3{
+	float:left;
+}
+
+.container{
+	float:right;
+	width:100%;
+	height:400px;
+}
+
+.container2{
+	width:49%;
+	float:left;
+	border:1px solid black;
+}
+
+.container2 h3{
+	text-align:left;
+	padding:10px;
+}
+
+.socialUpdate{
+	width:100%;
+	clear:none;
+}
+
+
+.container3{
+	
+	
+	width:49%;
+	margin:0px auto;
+	height:auto;
+	border: solid black 1px;
+	
+	float:left;	
+
+}
+
+.container3 h4{
+	padding:10px;
+}
+
+
+
+.socialItem{
+	width:100%;
+}
+
+.notification label{
+	float: left;
+	
+}
+
+select{
+	width:80%;
+}
+
+@media only screen and (min-width: 900px){
+
+	.socialItem{
+		width:30%
+	}
+
+	
+
+}
+
+@media only screen and (min-width: 1100px){
+
+	
+
+	#newCharts{
+	
+	height: 125px;
+	width:100%;
+	clear:both;
+}
+
+}
+
+
