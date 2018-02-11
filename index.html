@@ -20,10 +20,16 @@
     		<li id="avatar">
           <img src="images/profile.jpg" alt="profile">
         </li>
+
+        <li id='notificationDot'>
+          <div id="dot">2</div>
+        </li>
     		
         <li id="bell">
           <img src="icons/icon-bell.svg" alt="profile">
+
         </li>
+        
     	</ul>
     </header>
 
@@ -67,8 +73,10 @@
 
   <div id="alert">
 
-    <h4><span id='warning'>Alert</span> This is an alert box that will alert you when you need to be alerted.  Alerting is an important part of a web application <span id="close">X</span></h4>
+    <h4><span id='warning'>Alert</span> This is an alert box that will alert you when you need to be alerted.  Alerting is an important.<span id="close">X</span></h4>
   </div>
+
+   <hr class="mobile">
   <div id="traffic">
     <h3>Traffic</h3>
     <ul>
@@ -78,6 +86,8 @@
          <li>Monthly</li>
     </ul>
   </div>
+
+
 
       <div class="container">
       <canvas id="myChart"></canvas>
@@ -90,6 +100,8 @@
     <div class="container2">
       <canvas id="myDonut"></canvas>
     </div>
+
+    <hr class="mobile">
 
     <!--This is the for the three social buttons --> 
 <div id="social">
@@ -161,6 +173,7 @@
   </div>
   </div>
 </div>
+
 <div class="socialUpdate">
     <div class="container3">
               <h4>New Members</h4>
@@ -192,7 +205,7 @@
                   Stevo
                 </div>
                 <div class="email">
-                  stevemartinrealestate@gmail.com
+                  stevemartinreal@gmail.com
                 </div>
               </div>
                 <div class="date">
@@ -211,7 +224,7 @@
                 Steven
               </div>
               <div class="email">
-                stevemartintech@gmail.com
+                stevemartint@gmail.com
               </div>
             </div>
               <div class="date">
@@ -230,7 +243,7 @@
                 Steve M
               </div>
               <div class="email">
-                stevemartinexplores@gmail.com
+                stevemartinexp@gmail.com
               </div>
             </div>
               <div class="date">
@@ -240,6 +253,8 @@
 
 <!--Container2 closing Div -->
 </div>
+
+
 
 <div class="container3">
   <h4>Recent Activity</h4>
@@ -344,6 +359,7 @@
 
             <button id="send">Send</button> 
              <div id="confirm">Your messsage was sent</div>
+             <div id="notSent">How dare you try and send a message without including anything.  Shame on you!</div>
             
 
           </form>
@@ -515,8 +531,8 @@ let error =document.getElementById('errorMessage')
 
 
 function myFunction() {
-    var x = document.getElementById("subject");
-    if (x.value== ""){
+    var subject = document.getElementById("subject");
+    if (subject.value== ""){
       error.style.display="block"
       
     }
@@ -530,8 +546,8 @@ let error2 =document.getElementById('errorMessage2')
 
 
 function myFunction2() {
-    var x = document.getElementById("message");
-    if (x.value== ""){
+    var message = document.getElementById("message");
+    if (message.value== ""){
       error2.style.display="block"
      
     }
@@ -544,10 +560,21 @@ function myFunction2() {
   let send = document.getElementById('send');
   
   let confirm =document.getElementById('confirm');
+  let notSent =document.getElementById('notSent')
+  let message =document.getElementById('message').value;
+  let subject =document.getElementById('message').value;
+
 
   send.addEventListener('click', (event) =>{
     event.preventDefault();
-    confirm.style.display='block'
+    if (message || subject == ''){
+      notSent.style.display='block'
+    }
+    if (message && subject !==''){
+    
+    confirm.style.display='block'}
+
+
     console.log('bob');
   });
 

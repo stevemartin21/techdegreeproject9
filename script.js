@@ -44,8 +44,5 @@ switcher2.addEventListener('change', () =>{
 
 
 
-// Need to get the values for the select user and for the mssage //  Search for User and Message User
 
-send.addEventListener('click', ()=>{
 
-});
