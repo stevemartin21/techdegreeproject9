@@ -554,46 +554,64 @@ function myFunction2() {
 }
 </script>
 
+<!--
+<script>
+
+  let send = document.getElementById('send');
+  
+  let confirm =document.getElementById('confirm');
+  let notSent =document.getElementById('notSent');
+  let message =document.getElementById('message').value;
+  let subject =document.getElementById('subject').value;
+
+  send.addEventListener('click', (event) =>{
+    event.preventDefault();
+    if (message && subject !== ''){
+      confirm.style.display='block';
+    } 
+   
+ 
+  });
+
+
+</script>
+
+-->
+
+
 
 <script>
 
   let send = document.getElementById('send');
   
   let confirm =document.getElementById('confirm');
-  let notSent =document.getElementById('notSent')
-  let message =document.getElementById('message').value;
-  let subject =document.getElementById('message').value;
-
+  let notSent =document.getElementById('notSent');
+  let message =document.getElementById('message');
+  let subject =document.getElementById('subject');
 
   send.addEventListener('click', (event) =>{
     event.preventDefault();
-    if (message || subject == ''){
-      notSent.style.display='block'
-    }
-    if (message && subject !==''){
+    if (message.value || subject.value === ''){
+      notSent.style.display='block';
+      confirm.style.display='none'
+    } 
+
+    if (message.value && subject.value != '') {
     
-    confirm.style.display='block'}
+    confirm.style.display='block';
+    notSent.style.display='none'
+  }
+
+  console.log('bob');
 
 
-    console.log('bob');
+ 
   });
-
-
-  /*
-
-  send.addEventListener('click', (event) =>{
-    event.preventdefault();
-    if( subject && message == ""){
-      error3.style.display='block';
-      console.log('bob');
-    }
-
-  });
-
-  */
 
 
 </script>
+
+
 
 <script src="script.js"></script>
 
