@@ -7,13 +7,6 @@ close.addEventListener('click', () =>{
 	alert.style.display='none';
 });
 
-let random = $.ajax({
-  url: 'https://randomuser.me/api/',
-  dataType: 'json',
-  success: function(data) {
-    console.log(data);
-  }
-});
 
 // Turn on and Off slider 
 
